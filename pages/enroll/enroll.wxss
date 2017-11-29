@@ -1,0 +1,100 @@
+/* pages/enroll/enroll.wxss */
+.enroll{
+  width:100%;
+  height:100%;
+  position: relative;
+}
+
+.enroll .bg{
+  width:100%;
+  height:100%;
+  position:absolute;
+  top:0;
+  left:0;
+  z-index:-10;
+}
+
+.enroll .bg image{
+  width:100%;
+  height:100%;
+}
+
+.enroll .top{
+  height:35%;
+  text-align: center;
+  position:relative;
+  color:#fff;
+  overflow: hidden;
+}
+
+.enroll .top .myheadimg{
+  width:200rpx;
+  height:200rpx;
+  margin:60rpx auto;
+  overflow: hidden;
+}
+
+.enroll .top .myheadimg image{
+  width:100%;
+  height:100%;
+}
+
+
+.enroll .bottom{
+  height:65%;
+  overflow: hidden;
+}
+
+.enroll .bottom form .section{
+  height:80rpx;
+  line-height: 80rpx;
+  margin:40rpx 0;
+  overflow: hidden;
+  background: rgba(0,0,0,0.4);
+  color:#fff;
+}
+
+.enroll .bottom form .section .label{
+  width:20%;
+  float:left;
+  height:100%;
+  text-align: center;
+}
+
+.enroll .bottom form{
+  overflow: hidden;
+}
+.enroll .bottom form .section .input{
+  width:80%;
+  float:left;
+  height:100%;
+}
+
+.enroll .bottom form .section .input input,.enroll .bottom form .section .input picker,.enroll .bottom form .section .input radio-group{
+  width:100%;
+  height:100%;
+  padding:0 20rpx;
+  box-sizing: border-box;
+}
+.enroll .bottom form .section .input radio-group label{
+  margin-right:100rpx;
+}
+
+.enroll .bottom form .btn-area{
+  text-align: center;
+}
+
+.enroll .bottom form .btn-area button{
+  width:40%;
+  display: inline-block;
+  margin:0 5%;
+}
+
+.enroll .bottom .hasenrolled{
+  width:100%;
+  height:100%;
+  color:#fff;
+  text-align: center;
+  box-sizing: border-box;
+  padding:200rpx 100rpx 0;
+}

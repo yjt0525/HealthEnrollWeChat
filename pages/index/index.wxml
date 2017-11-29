@@ -1,0 +1,45 @@
+<view class="shopinfo">
+  <scroll-view scroll-y enable-back-to-top style='height:100%;margin-bottom:100rpx;'>
+    <view class='top'>
+      <view class='left'>
+        <view class='name'>{{ ShopInfo.shopname }}</view>
+        <view class='tip'>{{ ShopInfo.shoptitle }}</view>
+      </view>
+      <view class="right">
+        <image src="{{ ShopInfo.shoplogo }}"></image>
+      </view>
+    </view>
+    <view class='middle'>
+      <view class='line'>
+        <view class='icon'>
+          <image src="https://www.sadad.xyz/img/icon/location.png"></image>
+        </view>
+        <view class='content'>{{ ShopInfo.shopaddress }}</view>
+      </view>
+      <view class='line'>
+        <view class='icon'>
+          <image src="https://www.sadad.xyz/img/icon/clock.png"></image>        
+        </view>
+        <view class='content'>{{ ShopInfo.shoptime }}</view>
+      </view>
+      <view class='line' bindtap='MakePhoneCall'>
+        <view class='icon'>
+          <image src="https://www.sadad.xyz/img/icon/phone.png"></image>
+        </view>
+        <view class='content'>{{ ShopInfo.shopcontact }}</view>
+        <view class='arrow'>
+          <image src="https://www.sadad.xyz/img/icon/arrow.png"></image>        
+        </view>
+      </view>
+      <view class='line'>
+        <view class='icon'>
+          <image src="https://www.sadad.xyz/img/icon/picture.png"></image>          
+        </view>
+        <view class='content'>门店照片</view>
+      </view>
+    </view>
+    <view class='bottom'>
+      <image wx:for="{{ ImgList }}" wx:key="{{ item }}" src='{{ item.url }}' bindtap='JumpToSwiper' data-index="{{ index }}"></image>
+    </view>
+  </scroll-view>
+</view>

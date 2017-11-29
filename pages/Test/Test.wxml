@@ -1,0 +1,3 @@
+<!--pages/Test/Test.wxml-->
+<button bindtap='GetOpenId'>获取openid</button>
+<button bindtap='UserEnroll'>报名</button>

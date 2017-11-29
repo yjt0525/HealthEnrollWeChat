@@ -1,0 +1,32 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/Test/Test",
+    "pages/enroll/enroll",
+    "pages/swiper/swiper"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#000",
+    "navigationBarTitleText": "超级狗健身",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "selectedColor":"#f04848",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "iconPath":"/img/icon/home.png",
+        "selectedIconPath":"/img/icon/home_active.png",
+        "text": "门店信息"
+      },
+      {
+        "pagePath": "pages/enroll/enroll",
+        "iconPath": "/img/icon/edit.png",        
+        "selectedIconPath": "/img/icon/edit_active.png",        
+        "text": "我要报名"
+      }
+    ]
+  }
+}

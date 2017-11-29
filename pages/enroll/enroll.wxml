@@ -1,0 +1,44 @@
+<!--pages/enroll/enroll.wxml-->
+<view class='enroll'>
+  <view class='top'>
+    <view class='myheadimg'>
+      <image src="{{ UserInfo.avatarUrl }}"></image>
+    </view>
+    <view class='mynickname'>{{ UserInfo.nickName }}</view>
+  </view>
+  <view class='bottom'>
+    <form bindsubmit="SubmitEnroll" bindreset="ResetForm" wx:if="{{ ShowEnrollForm }}">
+      <view class="section">
+        <view class='label'>姓名</view>
+        <view class='input'>
+          <input type='text' name="name" placeholder='请输入姓名...' value="{{ MyName }}" bindinput="ChangeName"></input>
+        </view>
+      </view>
+      <view class="section">
+        <view class='label'>电话</view>
+        <view class='input'>
+          <input type='number' name="phone" placeholder='请输入联系方式...' value="{{ MyPhone }}" bindinput="ChangePhone"></input>
+        </view>
+      </view>
+      <view class='section'>
+        <view class='label'>性别</view>
+        <view class='input'>
+          <radio-group name="sex" bindchange="ChangeSex">
+            <label><radio value="0"/>男</label>
+            <label><radio value="1"/>女</label>
+          </radio-group>
+        </view>
+      </view>
+      <view class="btn-area">
+        <button formType="submit" type='primary'>报名</button>
+        <button formType="reset">重新填写</button>
+      </view>
+    </form>
+    <view class='hasenrolled' wx:if="{{ !ShowEnrollForm }}">
+      您已报名，稍后会有工作人员与您联系，如有什么问题可以向他咨询，请保持电话畅通。
+    </view>
+  </view>
+  <view class='bg'>
+    <image src="/img/enrollbg.png"></image>
+  </view>
+</view>
